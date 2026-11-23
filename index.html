@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nick Paget — Executive Creative Director</title>
+<meta name="description" content="Nick Paget is an executive creative director with 15 years on brands like Nike, Google, Mammut and Comfort Colors. Ongoing creative and special projects for in-house teams.">
+<meta property="og:title" content="Nick Paget — Executive Creative Director">
+<meta property="og:description" content="You don’t need an agency. You need an ECD.">
+<meta property="og:image" content="https://nickpaget.com/assets/hero-poster.jpg">
+<meta property="og:url" content="https://nickpaget.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111E32'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23F4EFE5' text-anchor='middle'%3ENP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#111E32; --ivory:#F4EFE5; --ink:#242123; --stone:#D8D0C1; --line:#B8AFA1;
+  --scrim:rgba(17,30,50,.55);
+  --gutter:48px; --s:32px; --m:64px; --l:96px;
+  --h1:clamp(48px, 7.2vw, 104px);
+  --h2:56px; --h2lh:60px; --h3:32px; --h3lh:36px;
+  --body:18px; --bodylh:28px;
+  --header:72px;
+  --serif:"Playfair Display", Georgia, serif;
+  --sans:"Work Sans", system-ui, sans-serif;
+}
+@media (max-width: 767px){
+  :root{ --gutter:24px; --s:24px; --m:40px; --l:64px;
+    --h2:36px; --h2lh:40px; --h3:24px; --h3lh:28px; --body:16px; --bodylh:24px; --header:64px; }
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:0}
+@media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:var(--body);line-height:var(--bodylh);overflow-x:hidden}
+img,video{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;letter-spacing:-0.01em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--navy);outline-offset:3px;box-shadow:0 0 0 6px var(--ivory)}
+.on-navy :focus-visible{outline-color:var(--ivory);box-shadow:0 0 0 6px var(--navy)}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--ivory);color:var(--navy);padding:8px 12px;z-index:100}
+.skip:focus{left:8px}
+.wrap{max-width:1440px;margin:0 auto;padding-inline:var(--gutter)}
+.label{font-size:12px;line-height:16px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.small{font-size:14px;line-height:20px}
+
+/* Header */
+.site-header{position:absolute;top:0;left:0;right:0;z-index:50;background:transparent;color:var(--ivory)}
+.site-header .wrap{height:var(--header);display:flex;align-items:center;justify-content:space-between}
+.wordmark{display:flex;align-items:baseline;gap:12px;text-decoration:none;color:var(--ivory)}
+.wordmark .wm-name{font-family:var(--serif);font-weight:600;font-size:24px;letter-spacing:-0.01em}
+.wordmark .wm-role{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.8;padding-left:12px;border-left:1px solid rgba(244,239,229,.45)}
+.nav-links{display:flex;gap:56px;list-style:none;margin:0;padding:0}
+.nav-links a{font-size:14px;line-height:20px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--ivory);padding:12px 0}
+.nav-links a:hover{text-decoration:underline;text-underline-offset:6px}
+.menu-btn{display:none;background:none;border:0;color:var(--ivory);width:44px;height:44px;padding:10px;cursor:pointer}
+.menu-btn span{display:block;height:2px;background:currentColor;margin:5px 0}
+.mobile-nav{display:none}
+@media (max-width: 767px){
+  .nav-links{display:none}
+  .menu-btn{display:block;margin-right:-10px}
+  .wordmark .wm-name{font-size:21px}
+  .wordmark .wm-role{display:none}
+  .site-header.menu-open{background:#07090c}
+  .mobile-nav[data-open="true"]{display:block;position:absolute;left:0;right:0;top:var(--header);background:#07090c;box-shadow:0 18px 30px rgba(0,0,0,.25)}
+  .mobile-nav ul{list-style:none;margin:0;padding:4px var(--gutter) 20px}
+  .mobile-nav li+li{border-top:1px solid rgba(244,239,229,.12)}
+  .mobile-nav a{display:block;padding:16px 0;font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--ivory)}
+  .menu-btn span{transition:transform .2s ease,opacity .2s ease}
+  .menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  body.no-scroll{overflow:hidden}
+}
+
+/* Hero: one live H1 over the campaign image */
+.hero{position:relative;background:#050608;color:var(--ivory);height:clamp(520px, min(48vw, 100vh), 920px);overflow:hidden}
+.hero > .wrap{position:relative;height:100%;display:flex;align-items:center;padding-top:var(--header);padding-bottom:var(--header)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.scrim{position:absolute;inset:0;background:var(--scrim)}
+.hero h1{position:relative;font-size:var(--h1);line-height:1;font-weight:600;max-width:6.4em;padding-top:0}
+@media (max-width: 767px){
+  .hero{height:calc(440px + var(--header))}
+  .hero-img{object-position:50% 50%}
+  .hero h1{padding-top:0;max-width:6.2em}
+}
+
+
+/* Statement band beneath the reel */
+.hero::after{content:"";position:absolute;left:0;right:0;top:0;height:160px;background:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,0));pointer-events:none}
+.statement{color:var(--ivory)}.tex{position:relative;overflow:hidden;isolation:isolate;background:#050608 var(--tex) center/cover no-repeat;color:var(--ivory)}.tex::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,5,7,.86) 0%,rgba(4,5,7,.6) 55%,rgba(4,5,7,.42) 100%);z-index:0;pointer-events:none}.tex::after{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.16;mix-blend-mode:overlay;pointer-events:none;z-index:0}.tex>*{position:relative;z-index:1}@media (max-width:767px){.tex::before{background:linear-gradient(180deg,rgba(4,5,7,.7),rgba(4,5,7,.82))}}
+.statement .wrap{padding-block:clamp(48px,6vw,96px)}
+.statement h1{font-size:var(--h1);line-height:1.02;font-weight:600;margin:0}
+.statement h1 .hl{color:var(--ivory)}
+.statement-copy{margin-top:clamp(28px,3vw,44px);max-width:46ch;display:flex;flex-direction:column;gap:14px;font-size:clamp(17px,1.4vw,20px);line-height:1.55;color:rgba(244,240,230,.82)}
+.statement-copy p{margin:0}
+.statement-cta{margin-top:clamp(28px,3vw,40px)}
+.statement .btn-primary{background:var(--ivory);color:var(--navy);border-color:var(--ivory)}
+.statement .btn-primary:hover{background:#1d3150;border-color:#1d3150;color:var(--ivory)}
+
+/* About: bio + trusted by */
+.about{background:var(--stone)}
+.about .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-block:28px;align-items:center}
+.bio-col{grid-column:1 / span 4}
+.bio{display:flex;gap:20px;align-items:center}
+.bio img{width:104px;height:130px;object-fit:cover;flex:none;border-radius:999px 999px 14px 14px}
+.creds-list{list-style:none;margin:0;padding:0;font-size:15px;line-height:22px;color:var(--ink)}
+.creds-list li+li{margin-top:2px}
+.trusted{grid-column:5 / span 4;border-left:1px solid var(--line);padding-left:32px}
+.trusted .label{font-family:var(--sans);color:var(--navy);margin:0 0 6px}
+.brand-list{list-style:none;margin:0;padding:0;font-family:var(--serif);font-size:20px;line-height:30px;color:var(--ink)}
+.brand-list li{display:inline}
+.brand-list li:not(:last-child)::after{content:"\00a0·";color:var(--line)}
+.brand-list .yrs{font-family:var(--sans);font-size:14px;color:var(--muted,#6b6b6b);white-space:nowrap}
+.brand-list li{white-space:nowrap}
+.brand-list--more{margin-top:8px;font-size:16px;line-height:24px;color:var(--muted,#6b6b6b)}
+@media (max-width: 767px){
+  .about .wrap{grid-template-columns:minmax(0,1fr);gap:16px;padding-block:20px}
+  .bio-col,.trusted,.trusted.awards{grid-column:1}
+  .bio img{width:80px;height:100px}
+  .trusted{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:14px}
+  .brand-list{font-size:17px;line-height:26px}
+  .brand-list--more{font-size:15px;line-height:22px}
+}
+.motion-btn{position:absolute;right:calc(var(--gutter) - 11px);bottom:12px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;color:#fff;cursor:pointer;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))}
+.motion-btn .i-play{display:none}
+.motion-btn[data-paused="true"] .i-play{display:block}
+.motion-btn[data-paused="true"] .i-pause{display:none}
+
+/* Offer opening */
+.offer-open{background:var(--ivory);border-bottom:1px solid var(--line)}
+.offer-open .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding-block:var(--s)}
+.offer-open h2,.offer-open .fee{font-family:var(--serif);font-weight:600;font-size:var(--h2);line-height:var(--h2lh);color:var(--navy)}
+@media (max-width: 767px){
+  .offer-open .wrap{flex-direction:column;align-items:flex-start;gap:4px}
+  .offer-open h2,.offer-open .fee{font-size:28px;line-height:34px}
+}
+.offer-body{padding-block:var(--l)}
+.offer-body .intro{font-size:22px;line-height:32px;max-width:760px}
+@media (max-width: 767px){ .offer-body .intro{font-size:18px;line-height:28px} }
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:var(--m);list-style:none;padding:0}
+@media (max-width: 767px){ .three{grid-template-columns:minmax(0,1fr);gap:0} }
+.three li{border-top:1px solid var(--line);padding-top:20px;padding-bottom:24px}
+.three .num{font-family:var(--serif);font-size:var(--h3);line-height:var(--h3lh);color:var(--navy)}
+.three h3{font-size:24px;line-height:30px;margin-top:8px;color:var(--ink)}
+.offer-terms{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px;margin-top:var(--m);padding-top:var(--s);border-top:1px solid var(--line)}
+.offer-terms p{max-width:640px}
+
+
+
+.book-amb{display:none;position:fixed;inset:0;z-index:0;background:#07080a;pointer-events:none}body[data-view=book] .book-amb{display:block}.book-amb img{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;opacity:0;transition:opacity 1.2s ease;filter:blur(40px) saturate(1.15)}.book-amb img.on{opacity:.4}body[data-view=book] .contact.tex{background:transparent}body[data-view=book] .contact.tex::before{background:var(--tex) center/cover no-repeat;opacity:.5;-webkit-mask-image:linear-gradient(transparent,#000 45%,#000 65%,transparent);mask-image:linear-gradient(transparent,#000 45%,#000 65%,transparent)}body[data-view=book] .contact.tex::after{display:none}body[data-view=book] .site-footer{background:transparent;border-top:0;position:relative;z-index:1}.book-amb::after{content:'';position:absolute;inset:0;background:radial-gradient(90% 80% at 50% 50%,rgba(7,8,10,.05),rgba(7,8,10,.6))}
+.case-lead .lead-cap{max-width:var(--max,1280px);margin:12px auto 0;padding-inline:var(--gutter,24px);font-size:14px;line-height:20px;color:var(--ink)}
+/* Two ways of working */
+.ways{padding-block:var(--l)}
+.ways h2{font-size:var(--h2);line-height:var(--h2lh);color:var(--navy);margin-top:12px;max-width:18ch}
+.ways-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,56px);margin-top:var(--m)}
+.way{border-top:1px solid var(--line);padding-top:24px;display:flex;flex-direction:column;gap:14px}
+.way .num{font-family:var(--serif);font-size:var(--h3);line-height:var(--h3lh);color:var(--navy)}
+.way h3{font-size:clamp(26px,2.4vw,34px);line-height:1.15;color:var(--ink);margin:0}
+.way p{margin:0;font-size:18px;line-height:28px;max-width:46ch}
+.way .fit{font-style:italic;color:var(--navy)}
+@media (max-width:767px){.ways-grid{grid-template-columns:1fr}.way p{font-size:17px;line-height:26px}}
+/* Offer module */
+.offer-module-wrap{padding-bottom:var(--l)}
+.offer-module{background:var(--navy);color:var(--ivory);padding:var(--m) clamp(24px,5vw,72px)}
+.offer-module .label{color:var(--stone)}
+.offer-module h2{font-size:var(--h2);line-height:var(--h2lh);margin-top:12px}
+.offer-module .intro{margin-top:20px;font-size:20px;line-height:30px;max-width:720px;color:var(--ivory)}
+@media (max-width: 767px){ .offer-module .intro{font-size:17px;line-height:26px} }
+.offer-module .three li{border-top-color:rgba(244,239,229,.3)}
+.offer-module .three .num,.offer-module .three h3{color:var(--ivory)}
+.offer-module .offer-terms{border-top-color:rgba(244,239,229,.3)}
+
+/* Buttons: square-cornered */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:14px 28px;font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid var(--navy)}
+.btn-primary{background:var(--navy);color:var(--ivory)}
+.btn-primary:hover{background:#1d3150;border-color:#1d3150}
+.btn-secondary{background:transparent;color:var(--navy)}
+.btn-secondary:hover{background:var(--navy);color:var(--ivory)}
+.on-navy .btn-primary{background:var(--ivory);color:var(--navy);border-color:var(--ivory)}
+.on-navy .btn-primary:hover{background:#fff}
+.text-link{font-weight:600;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+
+/* Client strip */
+.strip{background:var(--stone)}
+.strip .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 32px;padding-block:var(--s)}
+.strip .names{font-family:var(--serif);font-size:22px;line-height:30px;color:var(--ink)}
+.trusted .wrap{display:grid;grid-template-columns:auto 1fr;column-gap:32px;row-gap:4px;align-items:baseline;padding-block:20px}
+.trusted .label{color:var(--navy)}
+.trusted .creds{grid-column:2}
+@media (max-width: 767px){ .trusted .wrap{grid-template-columns:minmax(0,1fr);padding-block:16px} .trusted .creds{grid-column:1} .strip .names{font-size:18px;line-height:26px} }
+
+/* Italic highlight */
+.hl{font-style:italic;font-weight:500}
+
+/* Films */
+.films{padding:0 0 48px}
+.film-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:16px}
+.film{position:relative;display:block}
+.film img,.book-img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.film .play{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(0,0,0,.45)}
+.film .play::after{content:"";position:absolute;left:26px;top:20px;border-left:18px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent}
+.film:hover .play{background:rgba(0,0,0,.65)}
+.films figcaption .ext{color:var(--muted,#6b6b6b)}
+@media (max-width:700px){.film-grid{grid-template-columns:1fr}}
+
+/* Fashion reel */
+.reel{position:relative;overflow:hidden;background:#000}
+.reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:reel 15s infinite}
+.reel img:first-child{opacity:1}
+@keyframes reel{0%{opacity:0}4%{opacity:1}20%{opacity:1}24%{opacity:0}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.reel img{animation:none}.reel img:not(:first-child){display:none}}
+/* Chapters */
+.chapter{padding:var(--l) 0;border-top:1px solid var(--line)}
+.chapter .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}
+.chapter .ch-text{grid-column:1 / span 4;display:flex;flex-direction:column;gap:12px}
+.chapter .ch-media{grid-column:6 / span 7;display:grid;gap:16px}
+.chapter .ch-media.two{grid-template-columns:1fr 1fr}
+.chapter .ch-media video,.chapter .ch-media img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000;display:block}
+.chapter .ch-media figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.chapter .ch-media figure.full{grid-column:1 / -1}.chapter .ch-media .vimeo{position:relative;aspect-ratio:16/9;background:#000}.chapter .ch-media .vimeo iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.chapter h2{font-size:var(--h3);line-height:var(--h3lh);color:var(--navy)}
+.chapter .yrs{font-size:14px;color:var(--muted,#6b6b6b)}
+@media (max-width:767px){.chapter .ch-text,.chapter .ch-media{grid-column:1 / -1}.chapter .ch-media.two{grid-template-columns:1fr}}
+
+.bio-line{font-family:var(--serif);font-size:clamp(28px,3.2vw,44px);line-height:1.12;color:var(--navy);margin:28px 0 0;max-width:18ch}
+
+
+
+@media (min-width:768px){
+  .about .wrap{grid-template-columns:auto minmax(0,1fr) minmax(0,1fr);gap:40px}
+  .about .bio-col,.about .trusted,.about .trusted.awards{grid-column:auto}
+  .about .creds-list li{white-space:nowrap}
+}
+
+.do-list{list-style:none;padding:0;margin:24px 0 0;display:flex;flex-wrap:wrap;gap:8px 0;font-family:var(--serif);font-size:clamp(24px,2.6vw,36px);line-height:1.2;color:var(--navy)}
+.do-list li:not(:last-child)::after{content:"\00a0·\00a0";color:var(--line)}
+
+.book-cta{margin-top:var(--m,40px);display:flex;justify-content:center}
+
+.quotes{background:var(--stone)}
+.quotes .wrap{padding-block:var(--l,96px)}
+.quotes .label{font-family:var(--sans);font-weight:600;letter-spacing:.12em;color:var(--navy);margin:0 0 32px}
+.quote-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px}
+.quote{margin:0;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.quote blockquote{margin:0}
+.quote blockquote p{margin:0;font-family:var(--serif);font-size:clamp(20px,1.7vw,25px);line-height:1.35;color:var(--navy)}
+.quote figcaption{display:flex;gap:14px;align-items:center;font-size:14px;line-height:20px;color:var(--ink)}
+.quote figcaption img{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none}
+.quote .q-loc{color:var(--muted,#6b6b6b)}
+@media (max-width:900px){.quote-grid{grid-template-columns:1fr;gap:44px}}
+
+/* Text section */
+.text-section .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-block:var(--l)}
+.text-section h2{grid-column:1 / span 5;font-size:var(--h2);line-height:var(--h2lh);color:var(--navy)}
+.text-section h2.ecd-line{font-size:var(--h3);line-height:var(--h3lh)}
+.text-section .copy{grid-column:7 / span 6;display:flex;flex-direction:column;gap:20px}
+.text-section .copy.solo{grid-column:1 / span 8;font-size:clamp(19px,1.6vw,23px);line-height:1.5}
+@media (max-width:767px){.text-section .copy.solo{grid-column:1 / -1}}
+@media (max-width: 767px){ .text-section .wrap{grid-template-columns:minmax(0,1fr)} .text-section h2,.text-section .copy{grid-column:1} }
+
+/* Work */
+.work{border-top:1px solid var(--line)}
+.work .wrap{padding-top:var(--l);padding-bottom:var(--l)}
+.section-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:var(--m)}
+.section-head h2{font-size:var(--h2);line-height:var(--h2lh);color:var(--navy)}
+.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--m) 32px}
+@media (max-width: 767px){ .work-grid{grid-template-columns:minmax(0,1fr)} }
+.card{display:flex;flex-direction:column;gap:12px;text-decoration:none;color:inherit}
+.frame{aspect-ratio:16/9;width:100%;object-fit:cover;background:var(--stone)}
+.placeholder{display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:14px;line-height:20px;color:var(--ink);background:var(--stone);border:1px dashed var(--line)}
+.card h3{font-size:var(--h3);line-height:var(--h3lh);color:var(--navy)}
+a.card:hover h3{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.card .more{font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.card .muted{font-size:14px;line-height:20px}
+
+/* What I do and How it works */
+.band-stone{background:var(--stone)}
+.band .wrap{padding-block:var(--l)}
+.band .lede{margin-top:12px;max-width:640px}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:var(--m);list-style:none;padding:0}
+@media (max-width: 767px){ .cols{grid-template-columns:minmax(0,1fr)} }
+.cols li{border-top:2px solid var(--navy);padding-top:20px;display:flex;flex-direction:column;gap:8px}
+.cols h3{font-size:var(--h3);line-height:var(--h3lh);color:var(--navy)}
+.steps{counter-reset:step}
+.steps li{counter-increment:step;border-top:0;padding-top:0}
+.steps li::before{content:counter(step);font-family:var(--serif);font-weight:600;font-size:40px;line-height:44px;color:var(--navy);border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:8px}
+.after{margin-top:var(--m);font-size:16px}
+
+/* Contact */
+.contact{background:var(--navy);color:var(--ivory)}.offer-module.tex,.contact.tex{background:linear-gradient(180deg,transparent 55%,#07080a) ,var(--tex) center/cover no-repeat,#050608}
+.contact .wrap{padding-block:var(--l);display:flex;flex-direction:column;gap:32px}
+.contact h2{font-size:clamp(40px,5.2vw,72px);line-height:1.05;max-width:16em}
+.contact .actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px}
+.contact .email{font-size:18px}
+.note{font-size:12px;line-height:16px;opacity:.85}
+
+/* Footer */
+.site-footer{background:#07080a;color:var(--ivory);border-top:0}
+.site-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 32px;padding-block:28px}
+
+
+/* Book (full work) */
+.book{display:none}
+body[data-view="book"] .home,body[data-view="book"] .case{display:none}
+body[data-view="book"] .book{display:block}
+.book-top{background:var(--navy);color:var(--ivory)}.book-top.tex,.case-top.tex{background:#050608 var(--tex) center/cover no-repeat}.book-top.tex::before{background:linear-gradient(90deg,rgba(4,5,7,.6) 0%,rgba(4,5,7,.25) 45%,rgba(4,5,7,.1) 100%)}.book-top.tex{background-color:#000;background-position:center 50%}
+.book-top .wrap{padding-block:calc(var(--m) + var(--header)) var(--m)}
+.book-top h1{font-size:clamp(44px,6vw,88px);line-height:1.02}
+.book-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--m) 32px;padding-block:var(--l)}
+@media (max-width: 767px){ .book-grid{grid-template-columns:minmax(0,1fr)} }
+.book-grid figure{margin:0;display:flex;flex-direction:column;gap:10px}
+.book-grid video{width:100%;aspect-ratio:16/9;background:#000;object-fit:cover}
+.book-grid .label{color:var(--ink)}
+.book-grid h2{font-size:24px;line-height:30px;color:var(--navy)}
+.case-video{background:#000}
+.case-video video{display:block;width:100%;max-height:82vh;aspect-ratio:16/9;margin:0 auto;background:#000}
+
+/* Case study template */
+.case{display:none}
+body[data-view="case"] .home{display:none}
+body[data-view="case"] .case{display:block}
+.case-top{background:var(--navy);color:var(--ivory)}
+.case-top .wrap{padding-block:calc(var(--m) + var(--header)) var(--s)}
+.case-top h1{font-size:clamp(44px,6vw,88px);line-height:1.02;margin-top:12px}
+.case-lead img,.case-lead .placeholder{width:100%;aspect-ratio:21/9;object-fit:cover;object-position:50% 100%}
+@media (max-width: 767px){ .case-lead img{aspect-ratio:4/3;object-position:40% 100%} }
+[tabindex="-1"]:focus{outline:none;box-shadow:none}
+.case-lead .placeholder{aspect-ratio:21/9;border:0}
+.case-body .wrap{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-block:var(--l)}
+.case-body .side{grid-column:1 / span 4;display:flex;flex-direction:column;gap:24px}
+.case-body .main{grid-column:6 / span 7;display:flex;flex-direction:column;gap:20px}
+@media (max-width: 767px){ .case-body .wrap{grid-template-columns:minmax(0,1fr)} .case-body .side,.case-body .main{grid-column:1} }
+.case-body dt{font-size:12px;line-height:16px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-top:16px}
+.case-body dd{margin:4px 0 0}
+.case-body .context p{font-family:var(--serif);font-size:28px;line-height:36px;color:var(--navy)}
+@media (max-width: 767px){ .case-body .context p{font-size:22px;line-height:30px} }
+.stills .wrap{padding-bottom:var(--l);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--m) 24px}
+.stills figure{margin:0;display:flex;flex-direction:column;gap:10px}
+.stills figure.wide{grid-column:1 / -1}
+.stills figure.half{grid-column:span 6}
+.stills figure.inline{grid-column:3 / span 8}
+.stills figure.inline img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.stills figure img,.stills video{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.stills figure img.portrait{aspect-ratio:4/5}
+.stills figure img.natural{aspect-ratio:auto;object-fit:contain;background:none}
+@media (max-width: 767px){ .stills .wrap{grid-template-columns:minmax(0,1fr)} .stills figure.half,.stills figure.inline,.stills figure.wide{grid-column:1} }
+figcaption{font-size:14px;line-height:20px}
+.next{border-top:1px solid var(--line)}
+.next .wrap{padding-block:var(--m);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+.next a.next-link{font-family:var(--serif);font-size:var(--h3);line-height:var(--h3lh);color:var(--navy)}
+.missing{background:#fff7d6;color:var(--ink);font-size:12px;padding:1px 4px;font-family:var(--sans)}
+
+/* Night gallery: CultureCraft page */
+body[data-view=book]{background:#07080a}body[data-view=book]::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.07;mix-blend-mode:overlay;pointer-events:none;z-index:60}.book{background:transparent;color:var(--ivory);position:relative;z-index:1}.book-top{position:relative;overflow:hidden;isolation:isolate;background:transparent}.book-top .bgv,.book-top .bgs,.book-top::before,.book-top::after{-webkit-mask-image:linear-gradient(#000 55%,transparent 92%);mask-image:linear-gradient(#000 55%,transparent 92%)}.book-top .wrap{padding-bottom:72px!important}.book-top .bgv,.book-top .bgs{position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);object-fit:cover;filter:blur(14px) brightness(.55) saturate(1.4);z-index:-1;pointer-events:none}.book-top .bgs{display:none}.book-top::before{content:'';position:absolute;inset:0;background:radial-gradient(70% 90% at 50% 55%,rgba(4,5,7,.35),rgba(4,5,7,.8));z-index:0;pointer-events:none}.book-top::after{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.16;mix-blend-mode:overlay;pointer-events:none;z-index:0}.book-top .wrap{position:relative;z-index:1;text-align:center;padding-block:calc(var(--header) + 72px) 96px}.book-top h1.cc{font-size:clamp(60px,9vw,148px);line-height:.95;letter-spacing:-.02em}.book-top h1.cc .hl{font-style:italic;font-weight:500}.ccsub{margin:22px auto 0;max-width:46ch;color:#F4EFE5;font-size:clamp(16px,1.3vw,19px);line-height:1.5}.book .book-grid{gap:72px 40px;padding-block:24px 96px}.book .book-grid figure{gap:14px}.book .book-grid video,.book .book-grid .book-img{box-shadow:0 30px 60px rgba(0,0,0,.5);outline:1px solid rgba(244,239,229,.08)}.book .book-grid .label{color:rgba(244,239,229,.55)}.book .book-grid h2,.book .book-grid h2 a{color:#F4EFE5;font-size:28px;line-height:32px}.book .idx{font-family:var(--serif);font-style:italic;font-size:15px;color:rgba(244,239,229,.5);letter-spacing:.04em}.book .missing{background:rgba(244,239,229,.12);color:rgba(244,239,229,.7)}
+.book-top .bgv,.book-top .bgs{max-width:none;max-height:none;left:-40px;top:-40px}.rabbit{padding-block:0 var(--l,96px);text-align:center}.rabbit .label{margin:0 0 16px}.rabbit-link{display:inline-flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}.rabbit-title{font-family:var(--serif);font-size:clamp(28px,3.4vw,44px);font-style:italic;border-bottom:1px solid currentColor;padding-bottom:4px}.rabbit-link:hover .rabbit-title{color:#2d4670}.eps{padding-top:var(--m,48px)}.eps figure{margin:0}.eps video{display:block;width:100%;aspect-ratio:16/9;background:#000}.eps figcaption{margin-top:10px}.ways-cta{margin-top:48px;text-align:center}.statement-cta{display:flex;flex-wrap:wrap;gap:12px}.statement .btn-ghost{background:transparent;color:var(--ivory);border:1px solid rgba(244,239,229,.7)}.statement .btn-ghost:hover{background:var(--ivory);color:var(--navy);border-color:var(--ivory)}</style>
+</head>
+<body data-view="home">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header on-navy">
+  <div class="wrap">
+    <a class="wordmark" href="#top" aria-label="Nick Paget, home"><span class="wm-name">Nick Paget</span><span class="wm-role">Executive Creative Director</span></a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="#book">Work</a></li>
+        <li><a href="#ways">Ways of working</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Main" data-open="false">
+    <ul>
+      <li><a href="#book">Work</a></li>
+      <li><a href="#ways">Ways of working</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<div class="home">
+
+  <section class="hero" id="top" aria-label="Introduction">
+    <video class="hero-img" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true">
+      <source data-reel type="video/mp4">
+    </video>
+    <button class="motion-btn" type="button" aria-label="Pause video"><svg class="i-pause" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="6" y="4" width="4" height="16" fill="currentColor"/><rect x="14" y="4" width="4" height="16" fill="currentColor"/></svg><svg class="i-play" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></button>
+  </section>
+
+  <section class="statement tex" style="--tex:url(assets/tex/night.jpg)" aria-label="What Nick offers">
+    <div class="wrap">
+      <h1>You don’t need an <em class="hl">agency</em>.<br>You need an ECD.</h1>
+      <div class="statement-copy">
+        <p>Agencies get to big ideas slowly, with layers of people you'll never meet.</p>
+        <p>I'm a single point of contact with 15 years of experience in strategy, positioning, relaunches, branding, market expansions, campaigns, ads, stunts and experiences. And I'm crazy fast.</p>
+      </div>
+      <div class="statement-cta"><a class="btn btn-primary" href="#ways">Let&rsquo;s Dance</a><a class="btn btn-ghost" href="#offer">Advertising Emergency!</a></div>
+    </div>
+  </section>
+
+  <section class="about" aria-label="About Nick and who he has worked for">
+    <div class="wrap">
+      <div class="bio-col">
+      <div class="bio">
+        <img src="assets/nick-portrait.jpg" alt="Portrait of Nick Paget." width="760" height="950">
+        <ul class="creds-list">
+          <li>Formerly Head of Campaigns, R/GA London</li>
+          <li>Executive Creative Director &amp; Partner, lg2</li>
+          <li>Creative Director, Sid Lee Montreal</li>
+        </ul>
+      </div>
+      </div>
+      <div class="trusted">
+        <h2 class="label" id="trusted-title">Trusted by</h2>
+        <ul class="brand-list" aria-labelledby="trusted-title">
+          <li>Nike <span class="yrs">(4 years)</span></li> <li>Champion <span class="yrs">(2 years)</span></li> <li>New Era <span class="yrs">(2 years)</span></li> <li>Comfort Colors <span class="yrs">(6 years)</span></li> <li>Google <span class="yrs">(2 years)</span></li> <li>American Apparel <span class="yrs">(6 years)</span></li> <li>National Bank <span class="yrs">(2 years)</span></li>
+        </ul>
+
+      </div>
+      <div class="trusted awards">
+        <h2 class="label" id="awards-title">Awarded by</h2>
+        <ul class="brand-list awards-list" aria-labelledby="awards-title">
+          <li>Cannes Lions</li> <li>D&amp;AD</li> <li>The One Show</li> <li>Effie Awards</li> <li>Clio Awards</li> <li>Webby Awards</li> <li>ADCC</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="work-title">Selected work</h2>
+      </div>
+      <div class="work-grid">
+        <a class="card" href="#mammut">
+          <img class="frame" src="assets/mammut/badge.jpg" alt="The Unwellness Retreat badge over a climber on a snowy rock face.">
+          <p class="label">Mammut</p>
+          <h3>Colliding Mammut’s iconic outdoor gear with wellness culture.</h3>
+          <p class="muted">Unwellness Retreats</p>
+        </a>
+        <a class="card" href="#national-bank">
+          <img class="frame" src="assets/bn/faire-le-saut.jpg" alt="National Bank billboard: a girl leaping off a dock into a lake, with the line Faire le saut.">
+          <p class="label">National Bank of Canada</p>
+          <h3>Relaunching a national bank, in two languages.</h3>
+          <p class="muted">Build something.</p>
+        </a>
+        <a class="card" href="#google-assistant">
+          <img class="frame" src="assets/work/w05.jpg" alt="Google Assistant: two men in tuxedos facing each other across a mirror.">
+          <p class="label">Google</p>
+          <h3>Winning in four new markets at once.</h3>
+          <p class="muted">Make Google Do It</p>
+        </a>
+        <a class="card" href="#fashion">
+          <img class="frame" src="assets/aart-gallery-hero.jpg" alt="The AART Gallery: American Apparel's black-and-white exhibit at the industry's biggest trade show.">
+          <p class="label">Nike, American Apparel, New Era, Comfort Colors</p>
+          <h3>15 years of building sports and fashion brands.</h3>
+          <p class="muted">Fashion overview</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="quotes" aria-labelledby="quotes-title">
+    <div class="wrap">
+      <h2 class="label" id="quotes-title">In their words</h2>
+      <div class="quote-grid">
+        <figure class="quote">
+          <blockquote><p>“Nick is the definition of efficient and effective. We always get to better work quicker when he’s on a project. When it comes to maximizing value, there is no one better.”</p></blockquote>
+          <figcaption><img src="assets/quotes/steve.jpg" alt="" width="56" height="56"><span><strong>Steve Strong</strong><br>Founder &amp; MD, Anchor Leg<br><span class="q-loc">London, UK</span></span></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote><p>“Working with Nick was effortless. He fit right into the team and brought the vision to life beyond what we imagined.”</p></blockquote>
+          <figcaption><img src="assets/quotes/linda.jpg" alt="" width="56" height="56"><span><strong>Linda King</strong><br>Senior Brand Manager, Gildan North America<br><span class="q-loc">Christ Church, Barbados</span></span></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote><p>“Nick brings creative vision, production know-how and calm professionalism to every project.”</p></blockquote>
+          <figcaption><img src="assets/quotes/mael.jpg" alt="" width="56" height="56"><span><strong>Maël Demarcy</strong><br>Founder &amp; GM, Davaï Productions<br><span class="q-loc">Paris &amp; Montréal</span></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="ways" id="ways" aria-labelledby="ways-title">
+    <div class="wrap">
+      <p class="label">Ways of working</p>
+      <h2 id="ways-title">Two ways to work together.</h2>
+      <div class="ways-grid">
+        <div class="way">
+          <span class="num">01</span>
+          <h3>Ongoing creative</h3>
+          <p>For in-house teams with more on their plate than hours in the week. I work alongside your team on an ongoing basis. I sharpen ideas, crack the hard briefs and take whole projects on myself.</p>
+          <p class="fit">Best when the work never stops.</p>
+        </div>
+        <div class="way">
+          <span class="num">02</span>
+          <h3>Special projects</h3>
+          <p>For a launch, a new category or a new market. Agency-quality strategy and creative, without the agency process or the agency fees. In fast, out when it's done.</p>
+          <p class="fit">Best when the stakes are high and the clock is short.</p>
+        </div>
+      </div>
+      <div class="ways-cta"><a class="btn btn-primary" href="https://calendar.app.google/LPTSknAhyhtAxa2M8" target="_blank" rel="noopener">Book an intro call</a></div>
+    </div>
+  </section>
+
+  <section class="offer-module-wrap" id="offer" aria-labelledby="offer-title">
+    <div class="wrap">
+      <div class="offer-module on-navy tex" style="--tex:url(assets/tex/gold.jpg)">
+        <p class="label">The fastest way to start</p>
+        <h2 id="offer-title">The Big Idea in 24h</h2>
+        <p class="intro">The best way to see how I think is to give me a brief. Twenty-four working hours, over three days. You get the strategy, three concepts and how each comes to life, presented by the person who made them.</p>
+        <ol class="three">
+          <li><span class="num">01</span><h3>The strategy</h3></li>
+          <li><span class="num">02</span><h3>Three concepts</h3></li>
+          <li><span class="num">03</span><h3>How each comes to life</h3></li>
+        </ol>
+        <div class="offer-terms">
+          <p>Fixed fee, quoted upfront.</p>
+          <a class="btn btn-primary" href="https://calendar.app.google/JFXRXjGyB2N9Bhye9" target="_blank" rel="noopener">Book 24h Sprint Kickoff</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</div>
+
+<div class="case" id="case-view" aria-live="polite"></div>
+<div class="book-amb" aria-hidden="true"><img alt=""><img alt=""></div>
+<div class="book" id="book-view"></div>
+
+  <section class="rabbit" aria-label="The full book">
+    <div class="wrap">
+      <p class="label">Down the rabbit hole</p><a class="btn btn-secondary" href="#book">See the full book</a>
+    </div>
+  </section>
+
+<section class="contact on-navy tex" style="--tex:url(assets/tex/violet.jpg)" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <h2 id="contact-title">Got a launch, a new category or a new market on the horizon? Let's talk.</h2>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://calendar.app.google/LPTSknAhyhtAxa2M8" target="_blank" rel="noopener" aria-describedby="booking-note">Book an intro call</a>
+      <p class="email">Email <a class="text-link" href="mailto:nick@nickpaget.com">nick@nickpaget.com</a></p>
+    </div>
+    <p class="note" id="booking-note">30 minutes on Google Meet. Pick any open slot.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer on-navy">
+  <div class="wrap">
+    <a class="wordmark" href="#" aria-label="Nick Paget, Executive Creative Director: back to top"><span class="wm-name">Nick Paget</span><span class="wm-role">Executive Creative Director</span></a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var CASES = {
+    "nike": {
+      client: "Nike EMEA", name: "6 categories, 12 countries, innumerable product launches",
+      video: { src: "assets/work/nike-reel.mp4", poster: "assets/work/nike-reel.jpg", label: "Nike EMEA reel" },
+      context: [
+        "Before being promoted to R/GA London’s head of campaigns, I was the tools-up creative director at the centre of R/GA’s Nike team, delivering campaign innovations across EMEA for four years.",
+        "Six categories. Twelve countries. Innumerable product launches, across apps, retail, social and live events, each one built for its market and every one of them Nike."
+      ],
+      contextSource: "",
+      role: "Creative director at the centre of R/GA London’s Nike team, before becoming head of campaigns.",
+      roleMissing: "",
+      result: "",
+      chapters: [
+        { brand: "Nike · Tech Fleece", title: "Remember The Name", text: "Launching Nike Tech Fleece at Foot Locker across Europe: introducing the next generation, with the signatures to prove it.",
+          media: [ { v: "w12", cap: "Remember The Name", full: true } ] },
+        { brand: "Nike Women · Middle East", title: "International Women’s Day, live", line: "Start small. Start at home.", text: "In much of the Middle East, girls are discouraged from sport, and many only train at home, the one place they feel free from judgement. So on International Women’s Day, we brought the workout to them: a six-minute session streamed live from the home of Balqees Fathi, the Beyoncé of the Middle East, co-led by Dubai Nike trainer Salma. No gym, no kit, no experience needed. Balqees invited her 7 million followers, and girls across the region trained along on Nike+ Training Club and Facebook Live. The first live-streamed women’s workout in the UAE.",
+          media: [ { vimeo: "224941479", cap: "Nike Women: International Women’s Day, live with Balqees", full: true } ] },
+        { brand: "Nike Football", title: "Aubameyang: Origin Story", text: "For the Hypervenom 3 launch in 2017, we changed the way a boot’s story was told on Instagram.",
+          media: [ { v: "w14", cap: "Aubameyang: Origin Story", full: true } ] },
+        { brand: "Nike Sportswear · Germany", title: "The Vapor Vault", text: "For the launch of the new VaporMax: crack the vault, win the shoe.",
+          media: [ { v: "w10", cap: "The Vapor Vault", full: true } ] },
+        { brand: "NIKEiD", title: "Air Max Mirror", text: "An interactive out-of-home mirror for NIKEiD: design your own Air Max on the street.",
+          media: [ { v: "w07", cap: "NIKEiD Air Max Mirror", full: true } ] },
+        { brand: "Nike Running · Training", title: "Nike On Demand", text: "One-to-one coaching over messaging: the pilot for what is now Nike’s global AI platform, Experts On Demand.",
+          media: [ { v: "w02", cap: "Nike On Demand", full: true } ] }
+      ],
+      stills: [],
+      next: { href: "#google-assistant", label: "Google Assistant" }
+    },
+    "mammut": {
+      client: "Mammut", name: "Unwellness Retreats",
+      video: { src: "assets/mammut/trailer.mp4", poster: "assets/mammut/rise.jpg", label: "Mammut, Unwellness Retreats trailer" },
+      context: [
+        "Wellness culture has become toxic. Over-tracked, over-hyped, and promising profound personal growth for eight easy payments of 19.99.",
+        "Mammut had a less comfortable proposition: you won’t find growth in a dashboard. You’ll find it on the mountain.",
+        "So we turned the wellness retreat inside out. Three wellness creators, one mountain guide, one mountain. Morning movement became an alpine ascent. Breathwork began when cold water stole theirs.",
+        "Growth begins where comfort ends. Rise with the mountain."
+      ],
+      contextSource: "The test we set for every line: it should make someone in the wellness industry slightly uncomfortable, and make it hard for them to say Mammut is wrong.",
+      role: "Working with Small Giants, Mammut’s lead agency, I came up with Unwellness Retreats, then wrote the scripts and the campaign messaging.",
+      roleMissing: "",
+      result: "Launched in October 2026 as a global campaign built around influencers, reality-TV-inspired content and real Unwellness Retreats in local markets.",
+      stills: [
+        { kind: "wide", src: "assets/mammut/site/meditate.jpg", alt: "Four retreat participants meditating shirtless in the snow under a blue sky.", cap: "Meditation, mountain edition." },
+        { kind: "half", cls: "portrait", src: "assets/mammut/site/portrait.jpg", alt: "A participant in a snow-covered black and orange Mammut jacket, headlamp on.", cap: "The retreat dress code." },
+        { kind: "half", cls: "portrait", src: "assets/mammut/site/icewall.jpg", alt: "A climber in an orange suit on an ice wall, ice axe raised.", cap: "Morning movement became an ice wall." },
+        { kind: "wide", src: "assets/mammut/site/ropeteam.jpg", alt: "A rope team in black and orange Mammut gear working on a snowy summit.", cap: "Finding your centre, on a rope team." },
+        { kind: "half", cls: "portrait", src: "assets/mammut/site/zipline.jpg", alt: "A participant on a zipline high above snowy peaks.", cap: "Letting go, literally." },
+        { kind: "half", cls: "portrait", src: "assets/mammut/site/huddle.jpg", alt: "Participants huddled together in orange and black jackets on a snowy ridge.", cap: "Trust fall." },
+        { kind: "half", src: "assets/mammut/guru.jpg", alt: "The mountain guide tying on a red Mammut headband in the snow.", cap: "The “wellness guru.”" },
+        { kind: "half", src: "assets/mammut/site/summit.jpg", alt: "Three participants celebrating in a snowstorm in Mammut gear.", cap: "Graduation day." },
+        { kind: "inline", src: "assets/mammut/badge.jpg", alt: "The Unwellness Retreat badge over a climber on a snowy rock face.", cap: "The retreat identity." }
+      ],
+      episodes: [
+        { src: "assets/mammut/ep1.mp4", poster: "assets/mammut/ep1.jpg", cap: "Episode 1: Finding Balance" },
+        { src: "assets/mammut/ep2.mp4", poster: "assets/mammut/ep2.jpg", cap: "Episode 2: Stretch + Recover" },
+        { src: "assets/mammut/ep3.mp4", poster: "assets/mammut/ep3.jpg", cap: "Episode 3: Trust Fall" },
+        { src: "assets/mammut/bts.mp4", poster: "assets/mammut/bts.jpg", cap: "Behind the scenes: The Making Of" }
+      ],
+      next: { href: "#national-bank", label: "National Bank: Build something." }
+    },
+    "fashion": {
+      client: "Fashion and sportswear", name: "Loading clothes with meaning.",
+      clientList: "Nike (4 years), American Apparel (6 years), Comfort Colors (6 years), Gildan (6 years), Champion (2 years), New Era (2 years), Adidas, Nordstrom Rack",
+      lead: { src: "assets/work/cc-staircase.jpg", alt: "Comfort Colors, Spread Good Vibes: a model in pink lying across a pink-carpeted spiral staircase, laughing in headphones.", style: "aspect-ratio:16/9;object-position:50% 68%" },
+      context: [
+        "Fashion is one of the purest forms of brand building, because the communication is part of the product.",
+        "The garment itself can be fairly generic. The creative’s job is to load it with meaning, and to connect it with a particular corner of culture by contributing to that culture’s aesthetic."
+      ],
+      contextSource: "",
+      role: "Conceptor, writer and creative director.",
+      roleMissing: "",
+      result: "",
+      chapters: [
+        { brand: "Nike", yrs: "4 years", title: "6 categories, 12 countries, innumerable product launches", text: "Before being promoted to R/GA London’s head of campaigns, I was the tools-up creative director at the centre of R/GA’s Nike team, delivering campaign innovations across EMEA for four years.",
+          media: [ { v: "nike-reel", cap: "Nike EMEA reel", link: "#nike", full: true }, { v: "w12", cap: "Remember The Name: Tech Fleece" }, { v: "w07", cap: "NIKEiD Air Max Mirror" } ] },
+        { brand: "American Apparel", yrs: "6 years", title: "The AART Gallery", line: "Stealing the apparel industry’s biggest trade show.", text: "Since American Apparel’s fall from grace and purchase by Gildan, I’ve been working with them to rebuild the brand, starting within the printwear industry, where it began and where its volume has always come from. I helped develop its positioning within that industry and wrote the campaign line, Craft the Culture. I also came up with the disruptive installation at the ISS trade show in Long Beach, which put a single T-shirt on display like a work of art in a museum, to remind the industry that American Apparel still makes the original fashion tee: the 2001 and only.",
+          media: [ { v: "w04", cap: "The AART Gallery", link: "#american-apparel", full: true }, { img: "assets/aa-black-2001.jpg", cap: "The Black 2001 Exhibit" }, { img: "assets/aa-rack.jpg", cap: "The range, shown as artefacts" } ] },
+        { brand: "New Era", yrs: "2 years", title: "Speak With Your Cap", text: "I conceived, wrote and creative-directed the work.", miss: "One line on the idea",
+          media: [ { v: "w08", cap: "Speak With Your Cap", full: true } ] },
+        { brand: "Comfort Colors", yrs: "6 years", title: "Spread Good Vibes", text: "I conceived, wrote and creative-directed the work.",
+          media: [ { v: "w17", cap: "Comfort Colors relaunch film", full: true }, { img: "assets/cc/library-trio.jpg", cap: "Spread Good Vibes", full: true }, { img: "assets/cc/library-single.jpg", cap: "Spread Good Vibes" }, { img: "assets/cc/couple.jpg", cap: "Spread Good Vibes" } ] }
+      ],
+      stills: [],
+      next: { href: "#mammut", label: "Mammut: Unwellness Retreats" }
+    },
+    "national-bank": {
+      client: "National Bank of Canada", name: "Build something.",
+      lead: { src: "assets/bn/faire-le-saut.jpg", alt: "Billboard of a girl leaping off a dock into a lake, with the line Faire le saut and the National Bank logo with Faire. Avancer.", cap: "Faire le saut. “Take the leap”, said by a girl doing exactly that off the dock." },
+      context: [
+        "77% of Canadians have put off a project that mattered to them, a home, a business, a family, because it wasn’t “the right time.”",
+        "For National Bank’s first truly national campaign, we gave Canadians a reason to stop waiting, and gave the bank a role worth playing: the partner for people who get on with it.",
+        "The line had to work as hard in French as in English, and be a call to action in both. Build something. Faire. Avancer.",
+        "Out of home, “Faire” became an open structure. Faire à sa tête. Faire sa place. Faire le saut. Faire sa marque. One verb, a hundred ways to build."
+      ],
+      contextSource: "Survey by Léger for National Bank, August 2025. Agency: LG2.",
+      role: "At LG2, I drove the positioning, wrote the line in French and English, and led the launch campaign up to production.",
+      result: "Launched September 2025 as the bank’s first national campaign. Still the brand platform in year two, with the Right Time films passing 7 million YouTube views.",
+      films: [
+        { id: "67Can7Re8F0", poster: "assets/bn/film-launch-fr.jpg", cap: "Launch film, French (60 s), 2025" },
+        { id: "AD-Rh7P1sN8", poster: "assets/bn/film-right-time.jpg", cap: "The right time is yours to decide, 2026" },
+        { id: "P1hKWytSgWs", poster: "assets/bn/film-take-the-leap.jpg", cap: "The right time to take the leap, 2026" },
+        { id: "Qnm1hQJiUYc", poster: "assets/bn/film-courage.jpg", cap: "The courage to begin, 2026" }
+      ],
+      stills: [
+        { kind: "inline", src: "assets/bn/faire-a-sa-tete.jpg", cls: "natural", alt: "Billboard: a bearded man, with the line Faire à sa tête.", cap: "Faire à sa tête. Literally “do it with your head”: the French idiom for doing things your own way." },
+        { kind: "half", src: "assets/bn/faire-sa-place.jpg", alt: "Billboard: a woman working under a car, with the line Faire sa place.", cap: "Faire sa place. “Make your place”: carving out room for yourself, under the hood of a car." },
+        { kind: "half", src: "assets/bn/faire-sa-marque.jpg", alt: "Billboard at dusk: a woman in her shop, with the line Faire sa marque.", cap: "Faire sa marque. “Make your mark”, on a shop of her own." },
+        { kind: "half", src: "assets/bn/en-farmers.jpg", cls: "natural", alt: "Two farmers carrying a crate of greens out of a greenhouse, on a red field.", cap: "Build something. English campaign photography." },
+        { kind: "half", src: "assets/bn/en-couple.jpg", cls: "natural", alt: "A young couple sitting on the floor of an empty apartment, framed by a red line.", cap: "Build your projects." },
+        { kind: "half", src: "assets/bn/en-florist.jpg", cls: "natural", alt: "A florist arranging yellow flowers in her shop, with a red line across the frame.", cap: "Build your business." },
+        { kind: "half", src: "assets/bn/en-grandmother.jpg", cls: "natural", alt: "A granddaughter hugging her grandmother in a sunlit field, with a red line across the frame.", cap: "Build what lasts." }
+      ],
+      next: { href: "#nike", label: "Nike EMEA" }
+    },
+    "american-apparel": {
+      client: "American Apparel",
+      name: "The AART Gallery",
+      video: { src: "assets/work/w04.mp4", poster: "assets/work/w04.jpg", label: "American Apparel, The AART Gallery case film" },
+      lead: { src: "assets/aart-gallery-hero.jpg", alt: "The AART Gallery pavilion on the trade-show floor, wrapped in giant white type." },
+      context: [
+        "Stealing the apparel industry’s biggest trade show.",
+        "Since American Apparel’s fall from grace and purchase by Gildan, I’ve been working with them to rebuild the brand, starting within the printwear industry, where it began and where its volume has always come from. I helped develop its positioning within that industry and wrote the campaign line, Craft the Culture. I also came up with the disruptive installation at the ISS trade show in Long Beach, which put a single T-shirt on display like a work of art in a museum, to remind the industry that American Apparel still makes the original fashion tee: the 2001 and only."
+      ],
+      contextSource: "",
+      role: "Positioning, the campaign line Craft the Culture, and the concept for The AART Gallery. I still work with American Apparel as fractional executive creative director and creative consultant, and with Gildan’s other brands: Gildan, Comfort Colors and, as of recently, Hanes.",
+      roleMissing: "",
+      result: null,
+      stills: [
+        { kind: "half", src: "assets/aa-black-2001.jpg", alt: "Entrance to The Black 2001 Exhibit: a single black T-shirt displayed on a white wall.", cap: "The Black 2001 Exhibit: one shirt, one wall." },
+        { kind: "half", src: "assets/aa-2001-and-only.jpg", alt: "A white room with a counter reading THE 2001 AND ONLY and a screen-printing press.", cap: "The 2001 and only." },
+        { kind: "inline", src: "assets/aa-text-wall.jpg", alt: "Large black type on a white wall introducing the 2001 tee.", cap: "Wall copy inside the gallery." },
+        { kind: "half", src: "assets/aa-rack.jpg", alt: "Black and grey tees hung on clear acrylic stands, labelled by fabric.", cap: "The range, shown as artefacts." },
+        { kind: "half", src: "assets/aa-eclipse.jpg", alt: "A black circle with a glowing white halo set into a white wall.", cap: "Installation detail." }
+      ],
+      next: { href: "#fashion", label: "Fashion: Loading clothes with meaning" }
+    },
+    "remember-the-name": {
+      client: "Nike", name: "Remember The Name",
+      video: { src: "assets/work/w12.mp4", poster: "assets/work/w12.jpg", label: "Nike, Remember The Name case film" },
+      context: ["Fashion campaigns that live everywhere."],
+      contextSource: "", idea: "[Two lines on the brief and the idea]",
+      role: "At R/GA London, I led campaign teams on Nike.",
+      roleMissing: "Confirm Nick's role on Remember The Name",
+      result: null, stills: [],
+      next: { href: "#google-assistant", label: "Google Assistant" }
+    },
+    "google-assistant": {
+      client: "Google", name: "Google Assistant",
+      video: { src: "assets/work/w05.mp4", poster: "assets/work/w05.jpg", label: "Google Assistant case film" },
+      context: ["New markets.", "Google needed to introduce the Assistant to the U.K., France, Italy and Germany at the same time, in a way that felt local in each market and unmistakably Google everywhere.", "One line in four languages: Make Google do it. Dites à Google de le faire. Mach mal, Google. Fallo fare a Google.", "I interviewed and hired specialists in each market, then deliberately let them work in close proximity with the clients to nail the local insights and sense of humour. From there, my job was largely production oversight."],
+      contextSource: "",
+      role: "Creative director for the project, overseeing all four markets to strike the right balance between consistency and relevance.",
+      roleMissing: "",
+      result: "After the campaign, Google Assistant unseated Alexa as the number one voice assistant in Europe, and Campaign named it Integrated Campaign of the Year.",
+      stills: [
+        { kind: "wide", src: "assets/google/g30.jpg", alt: "Four posters: Make Google do it, Dites à Google de le faire, Mach mal Google, Fallo fare a Google.", cap: "One line, four markets." },
+        { kind: "half", src: "assets/google/g63.jpg", alt: "Billboard at Old Street roundabout: Need to find the nearest pub with TV screens?", cap: "Contextual out of home at Old Street, London." },
+        { kind: "half", src: "assets/google/g66.jpg", alt: "Escalator posters reading Make Google suggest it and Ok Google, what should I wear to Pride?", cap: "Pride, on the Underground." },
+        { kind: "half", src: "assets/google/g81.jpg", alt: "Time Out London cover: Ok Google, what’s the London Pride parade route?", cap: "Time Out London." },
+        { kind: "half", src: "assets/google/g39.jpg", alt: "A man in a gallery beside a blue sculpture, thinking: I should remember to pick up toothpaste.", cap: "The films: small moments, local humour." }
+      ],
+      next: { href: "#mammut", label: "Mammut: Unwellness Retreats" }
+    },
+    "new-era": {
+      client: "New Era", name: "Speak With Your Cap",
+      video: { src: "assets/work/w08.mp4", poster: "assets/work/w08.jpg", label: "New Era, Speak With Your Cap case film" },
+      context: ["Big campaign ideas."],
+      contextSource: "", idea: "[Two lines on the brief and the idea]",
+      role: "", roleMissing: "Nick's role on Speak With Your Cap",
+      result: null, stills: [],
+      next: { href: "#remember-the-name", label: "Nike: Remember The Name" }
+    }
+  };
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+  function miss(t){ return ''; }
+
+  function renderCase(c){
+    var h = '';
+    h += '<section class="case-top on-navy tex" style="--tex:url(assets/tex/' + ['night','gold','violet'][Math.max(0,Object.values(CASES).indexOf(c)) % 3] + '.jpg)"><div class="wrap"><p class="label">' + esc(c.client) + '</p><h1>' + esc(c.name) + '</h1></div></section>';
+    if (c.video) h += '<div class="case-video"><video controls playsinline preload="metadata" poster="' + c.video.poster + '" src="' + c.video.src + '" aria-label="' + esc(c.video.label) + '"></video></div>';
+    else h += '<div class="case-lead">' + (c.lead
+      ? '<img src="' + c.lead.src + '" alt="' + esc(c.lead.alt) + '"' + (c.lead.style ? ' style="' + c.lead.style + '"' : '') + '>' + (c.lead.cap ? '<p class="lead-cap">' + esc(c.lead.cap) + '</p>' : '')
+      : '') + '</div>';
+    h += '<section class="case-body"><div class="wrap"><dl class="side">';
+    h += '<div><dt>' + (c.clientList ? 'Clients' : 'Client') + '</dt><dd>' + esc(c.clientList || c.client) + '</dd></div>';
+    if (c.role) h += '<div><dt>My role</dt><dd>' + esc(c.role) + '</dd></div>';
+    if (c.result) h += '<div><dt>Result</dt><dd>' + esc(c.result) + '</dd></div>';
+    h += '</dl><div class="main context">';
+    c.context.forEach(function(p){ h += '<p>' + esc(p) + '</p>'; });
+    
+    if (c.contextSource) h += '<p class="small" style="font-family:var(--sans);font-size:14px;line-height:20px;color:var(--ink)">' + esc(c.contextSource) + '</p>';
+    h += '</div></div></section>';
+    if (c.chapters) c.chapters.forEach(function(ch){
+      h += '<section class="chapter"><div class="wrap"><div class="ch-text"><p class="label">' + esc(ch.brand) + (ch.yrs ? ' <span class="yrs">· ' + esc(ch.yrs) + '</span>' : '') + '</p>';
+      if (ch.title) h += '<h2>' + esc(ch.title) + '</h2>';
+      if (ch.line) h += '<p style="font-family:var(--serif);font-size:22px;line-height:28px;color:var(--navy)">' + esc(ch.line) + '</p>';
+      if (ch.text) h += '<p>' + esc(ch.text) + '</p>';
+      
+      h += '</div><div class="ch-media' + (ch.media.length > 1 ? ' two' : '') + '">';
+      
+      ch.media.forEach(function(m){
+        h += '<figure' + (m.full ? ' class="full"' : '') + '>';
+        if (m.vimeo) h += '<div class="vimeo"><iframe src="https://player.vimeo.com/video/' + m.vimeo + '?title=0&byline=0&portrait=0&dnt=1" title="' + esc(ch.brand + ', ' + m.cap) + '" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>';
+        else if (m.v) h += '<video controls playsinline preload="none" poster="assets/work/' + m.v + '.jpg" src="assets/work/' + m.v + '.mp4" aria-label="' + esc(ch.brand + ', ' + m.cap) + '"></video>';
+        else h += '<img src="' + m.img + '" alt="' + esc(m.cap) + '">';
+        h += '<figcaption>' + (m.link ? '<a href="' + m.link + '">' + esc(m.cap) + '</a>' : esc(m.cap)) + '</figcaption></figure>';
+      });
+      h += '</div></div></section>';
+    });
+    if (c.episodes) { h += '<section class="films eps" aria-label="The series"><div class="wrap"><p class="label">The series</p><div class="film-grid">';
+      c.episodes.forEach(function(f){ h += '<figure><video controls playsinline preload="none" poster="' + f.poster + '" aria-label="' + esc(f.cap) + '"><source src="' + f.src + '" type="video/mp4"></video><figcaption>' + esc(f.cap) + '</figcaption></figure>'; });
+      h += '</div></div></section>'; }
+    if (c.films) { h += '<section class="films" aria-label="Films"><div class="wrap"><p class="label">Films</p><div class="film-grid">';
+      c.films.forEach(function(f){ h += '<figure><a class="film" href="https://www.youtube.com/watch?v=' + f.id + '" target="_blank" rel="noopener" aria-label="Watch on YouTube: ' + esc(f.cap) + '"><img src="' + f.poster + '" alt=""><span class="play" aria-hidden="true"></span></a><figcaption>' + esc(f.cap) + ' <span class="ext">· YouTube ↗</span></figcaption></figure>'; });
+      h += '</div></div></section>'; }
+    if (c.stills.length) { h += '<section class="stills" aria-label="Selected stills"><div class="wrap">';
+    c.stills.forEach(function(s){
+      var cls = s.kind === 'video' ? 'wide' : s.kind;
+      if (s.missing) return;
+      h += '<figure class="' + cls + '">';
+      if (s.kind === 'video') h += '<video controls muted playsinline preload="none" poster="' + s.poster + '" src="' + s.src + '" aria-label="Excerpt from The AART Gallery case film"></video>';
+      else h += '<img' + (s.cls ? ' class="' + s.cls + '"' : '') + ' src="' + s.src + '" alt="' + esc(s.alt) + '">';
+      if (s.cap) h += '<figcaption>' + esc(s.cap) + '</figcaption>';
+      h += '</figure>';
+    });
+    h += '</div></section>'; }
+    h += '<section class="next"><div class="wrap"><div><p class="label">Next project</p><a class="next-link" href="' + c.next.href + '">' + esc(c.next.label) + '</a></div>';
+    h += '<div style="display:flex;gap:16px;flex-wrap:wrap"><a class="btn btn-secondary" href="#book">All work</a><a class="btn btn-primary" href="https://calendar.app.google/JFXRXjGyB2N9Bhye9" target="_blank" rel="noopener">Book 24h Sprint Kickoff</a></div></div></section>';
+    return h;
+  }
+
+  var BOOK = [
+    { n:18, client:"Mammut", title:"Unwellness Retreats", link:"#mammut", img:"assets/mammut/badge.jpg", bg:"mammut" },
+    { n:17, client:"National Bank of Canada", title:"Build something.", link:"#national-bank", img:"assets/bn/faire-le-saut.jpg", bg:"nb" },
+    { n:1, client:"Malaria No More", title:"The World\u2019s First Voice Petition" },
+    { n:2, client:"Nike", title:"Nike On Demand", link:"#nike" },
+    { n:8, client:"New Era", title:"Speak With Your Cap" },
+    { n:9, client:"Crush", title:"Your First Crush. All Grown Up.", poster:"assets/work/w09-effie.jpg" },
+    { n:3, client:"Dr Pepper", title:"More Is More" },
+    { n:4, client:"American Apparel", title:"The AART Gallery", link:"#american-apparel" },
+    { n:19, vid:"w17", client:"Comfort Colors", title:"Spread Good Vibes", link:"#fashion", bg:"w17" },
+    { n:5, client:"Google", title:"Google Assistant", link:"#google-assistant" },
+    { n:6, client:"Pony", title:"Wear Your Mask Properly" },
+    { n:7, client:"NIKEiD", title:"Air Max Mirror", link:"#nike" },
+    { n:10, client:"Nike", title:"The Vapor Vault", link:"#nike" },
+    { n:11, client:"Kijiji", title:"Your Neighbours\u2019 Stuff" },
+    { n:12, client:"Nike", title:"Remember the Name", link:"#nike" },
+    { n:13, client:"Dewar\u2019s Scotch Whisky", title:"One Man Gang" },
+    { n:14, client:"Nike", title:"Aubameyang: Origin Story", link:"#nike" },
+    { n:15, client:"Sleeping Dogs", title:"Undercover, the Rules Are Different" }
+  ];
+  function renderBook(){
+    var h = '<section class="book-top on-navy"><video class="bgv" autoplay muted loop playsinline aria-hidden="true" tabindex="-1" poster="assets/statement-still.jpg"><source data-reel type="video/mp4"></video><img class="bgs" src="assets/statement-still.jpg" alt="" aria-hidden="true"><div class="wrap"><h1 class="cc">CultureCraft</h1><p class="ccsub">I create campaigns and activations that collide with culture for ambitious brands and global icons.</p></div></section><div class="wrap"><div class="book-grid">';
+    BOOK.forEach(function(w, i){
+      var nn = (w.n < 10 ? '0' : '') + w.n, vid = w.vid || ('w' + nn), bg = 'assets/amb/' + (w.bg || vid) + '.jpg';
+      var idx = '<span class="idx">' + (i + 1 < 10 ? '0' : '') + (i + 1) + '</span>';
+      var name = w.title ? (w.client + ', ' + w.title) : ('Project ' + w.n);
+      if (w.img) h += '<figure data-bg="' + bg + '">' + idx + '<a href="' + w.link + '"><img class="book-img" src="' + w.img + '" alt="' + esc(name) + '"></a><figcaption>';
+      else h += '<figure data-bg="' + bg + '">' + idx + '<video controls playsinline preload="none" poster="' + (w.poster || ('assets/work/' + vid + '.jpg')) + '" src="assets/work/' + vid + '.mp4" aria-label="' + esc(name) + '"></video><figcaption>';
+      if (w.title) h += '<p class="label">' + esc(w.client) + '</p><h2>' + (w.link ? '<a href="' + w.link + '" style="text-decoration:none;color:inherit">' + esc(w.title) + '</a>' : esc(w.title)) + '</h2>';
+      else h += '<p class="label">' + miss('Client') + '</p><h2>' + miss('Project title') + '</h2>';
+      h += '</figcaption></figure>';
+    });
+    h += '</div></div>';
+    return h;
+  }
+  var bookView = document.getElementById('book-view');
+  var view = document.getElementById('case-view');
+  var homeAnchors = { top:1, work:1, ways:1, offer:1, contact:1, main:1 };
+
+  function route(){
+    var id = (location.hash || '').slice(1);
+    if (id === 'book') {
+      document.body.setAttribute('data-view', 'book');
+      if (!bookView.innerHTML) { bookView.innerHTML = renderBook(); wireReel(bookView.querySelector('.bgv')); wireAmb(); } else kickAll();
+      document.title = 'Work — Nick Paget';
+      window.scrollTo(0, 0);
+      var bh = bookView.querySelector('h1'); if (bh){ bh.setAttribute('tabindex','-1'); bh.focus({preventScroll:true}); }
+    } else if (CASES[id]) {
+      document.body.setAttribute('data-view', 'case');
+      view.innerHTML = renderCase(CASES[id]);
+      document.title = CASES[id].client + ' — Nick Paget';
+      window.scrollTo(0, 0);
+      var h1 = view.querySelector('h1'); if (h1){ h1.setAttribute('tabindex','-1'); h1.focus({preventScroll:true}); }
+    } else {
+      var wasCase = document.body.getAttribute('data-view') !== 'home';
+      document.body.setAttribute('data-view', 'home');
+      setTimeout(kickAll, 50);
+      document.title = 'Nick Paget — Executive Creative Director';
+      if (wasCase) {
+        var el = id && homeAnchors[id] ? document.getElementById(id) : null;
+        if (el) el.scrollIntoView(); else window.scrollTo(0, 0);
+      }
+    }
+  }
+  document.addEventListener('play', function(e){
+    var t = e.target; if (t.closest && (t.closest('.hero') || t.classList.contains('bgv'))) return;
+    document.querySelectorAll('video').forEach(function(v){ if (v !== t && !v.closest('.hero') && !v.classList.contains('bgv')) v.pause(); });
+  }, true);
+  window.addEventListener('hashchange', route);
+  route();
+
+
+  // Reel source: lighter file on small screens
+  var REEL = (window.innerWidth || 1200) < 900 ? 'assets/hero-loop-m.mp4' : 'assets/hero-loop.mp4';
+  function wireReel(v){ if (!v) return; var s = v.querySelector('source'); if (s && s.getAttribute('src') !== REEL){ s.setAttribute('src', REEL); v.load(); } kick(v); }
+  function kick(v){ if (!v || v.dataset.userPaused) return; v.muted = true; v.setAttribute('muted',''); var pr = v.play(); if (pr && pr.catch) pr.catch(function(){}); }
+  function kickAll(){ document.querySelectorAll('.hero video, .book-top .bgv').forEach(function(v){ if (v.offsetParent !== null) kick(v); }); }
+  document.addEventListener('visibilitychange', function(){ if (!document.hidden) kickAll(); });
+  ['touchstart','pointerdown','scroll'].forEach(function(ev){ window.addEventListener(ev, kickAll, { passive:true, once:true }); });
+  // Book ambient backdrop: blurred still of the work nearest mid-screen, cross-faded
+  var amb, ambI, ambCur, ambSrc, ambObs;
+  function setAmb(src){ if (!amb || !src || src === ambSrc) return; ambSrc = src; var nx = ambI[1 - ambCur]; nx.onload = function(){ nx.classList.add('on'); ambI[ambCur].classList.remove('on'); ambCur = 1 - ambCur; }; nx.src = src; }
+  function wireAmb(){
+    if (!amb) { amb = document.querySelector('.book-amb'); ambI = amb ? amb.querySelectorAll('img') : []; ambCur = 0; ambSrc = ''; }
+    if (!amb || !('IntersectionObserver' in window)) return;
+    if (ambObs) ambObs.disconnect();
+    setAmb('assets/amb/hero.jpg');
+    ambObs = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) setAmb(e.target.getAttribute('data-bg')); }); }, { rootMargin: '-45% 0px -45% 0px' });
+    bookView.querySelectorAll('figure[data-bg]').forEach(function(f){ ambObs.observe(f); });
+  }
+
+  // Hero motion: pause button
+  var hv = document.querySelector('.hero video'), mb = document.querySelector('.motion-btn');
+  function setMotion(play){
+    if (!hv) return;
+    if (play) { var pr = hv.play(); if (pr && pr.catch) pr.catch(function(){}); } else hv.pause();
+    mb.setAttribute('data-paused', play ? 'false' : 'true');
+    mb.setAttribute('aria-label', play ? 'Pause video' : 'Play video');
+  }
+  if (hv && mb) {
+    wireReel(hv);
+    mb.addEventListener('click', function(){ var play = hv.paused; if (play) delete hv.dataset.userPaused; else hv.dataset.userPaused = '1'; setMotion(play); });
+  }
+
+  // Mobile menu
+  var btn = document.querySelector('.menu-btn');
+  var nav = document.getElementById('mobile-nav');
+  function setMenu(open){
+    nav.setAttribute('data-open', open ? 'true' : 'false');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    var hdr = btn.closest('.site-header'); if (hdr) hdr.classList.toggle('menu-open', open);
+  }
+  btn.addEventListener('click', function(){ setMenu(btn.getAttribute('aria-expanded') !== 'true'); });
+  nav.addEventListener('click', function(e){ if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true'){ setMenu(false); btn.focus(); }
+  });
+  window.addEventListener('resize', function(){ if (window.innerWidth >= 768) setMenu(false); });
+})();
+</script>
+</body>
+</html>
