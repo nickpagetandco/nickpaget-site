@@ -720,8 +720,8 @@ body[data-view=book]{background:#07080a}body[data-view=book]::after{content:'';p
       vimeoFilms: [
         { id: "274116090", cap: "Make Google do it. U.K., 60 s" },
         { id: "274116258", cap: "Dites à Google de le faire. France, 60 s" },
-        { id: "274116276", cap: "Fallo fare a Google: Home. Italy, 30 s" },
-        { id: "274116314", cap: "Fallo fare a Google: Car. Italy, 30 s" }
+        { yt: "k6XIliRPFC8", cap: "Mach mal, Google. Germany, 60 s" },
+        { id: "274116276", cap: "Fallo fare a Google. Italy, 30 s" }
       ],
       stills: [],
       next: { href: "#mammut", label: "Mammut: Unwellness Retreats" }
@@ -782,7 +782,7 @@ body[data-view=book]{background:#07080a}body[data-view=book]::after{content:'';p
       c.films.forEach(function(f){ h += '<figure><a class="film" href="https://www.youtube.com/watch?v=' + f.id + '" target="_blank" rel="noopener" aria-label="Watch on YouTube: ' + esc(f.cap) + '"><img src="' + f.poster + '" alt=""><span class="play" aria-hidden="true"></span></a><figcaption>' + esc(f.cap) + ' <span class="ext">· YouTube ↗</span></figcaption></figure>'; });
       h += '</div></div></section>'; }
     if (c.vimeoFilms) { h += '<section class="films vfilms" aria-label="The films"><div class="wrap"><p class="label">The films</p><div class="vgrid">';
-      c.vimeoFilms.forEach(function(f){ h += '<figure><div class="vimeo"><iframe src="https://player.vimeo.com/video/' + f.id + '?title=0&byline=0&portrait=0&dnt=1" title="' + esc(f.cap) + '" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><figcaption>' + esc(f.cap) + '</figcaption></figure>'; });
+      c.vimeoFilms.forEach(function(f){ h += '<figure><div class="vimeo"><iframe src="' + (f.yt ? 'https://www.youtube-nocookie.com/embed/' + f.yt + '?rel=0' : 'https://player.vimeo.com/video/' + f.id + '?title=0&byline=0&portrait=0&dnt=1') + '" title="' + esc(f.cap) + '" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><figcaption>' + esc(f.cap) + '</figcaption></figure>'; });
       h += '</div></div></section>'; }
     if (c.stills.length) { h += '<section class="stills" aria-label="Selected stills"><div class="wrap">';
     c.stills.forEach(function(s){
