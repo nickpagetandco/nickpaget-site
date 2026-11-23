@@ -565,7 +565,7 @@ body[data-view=book]{background:#07080a}body[data-view=book]::after{content:'';p
   var CASES = {
     "nike": {
       client: "Nike EMEA", name: "6 categories, 12 countries, innumerable product launches",
-      video: { src: "assets/work/nike-reel.mp4", poster: "assets/work/nike-reel.jpg?v=2", label: "Nike EMEA reel" },
+      video: { src: "assets/work/nike-reel.mp4", poster: "assets/work/nike-reel-poster.jpg", label: "Nike EMEA reel" },
       context: [
         "Before being promoted to R/GA London’s head of campaigns, I was the tools-up creative director at the centre of R/GA’s Nike team, delivering campaign innovations across EMEA for four years.",
         "Six categories. Twelve countries. Innumerable product launches, across apps, retail, social and live events, each one built for its market and every one of them Nike."
@@ -637,7 +637,7 @@ body[data-view=book]{background:#07080a}body[data-view=book]::after{content:'';p
       result: "",
       chapters: [
         { brand: "Nike", yrs: "4 years", title: "6 categories, 12 countries, innumerable product launches", text: "Before being promoted to R/GA London’s head of campaigns, I was the tools-up creative director at the centre of R/GA’s Nike team, delivering campaign innovations across EMEA for four years.",
-          media: [ { v: "nike-reel", cap: "Nike EMEA reel", link: "#nike", full: true }, { v: "w12", cap: "Remember The Name: Tech Fleece" }, { v: "w07", cap: "NIKEiD Air Max Mirror" } ] },
+          media: [ { v: "nike-reel", poster: "assets/work/nike-reel-poster.jpg", cap: "Nike EMEA reel", link: "#nike", full: true }, { v: "w12", cap: "Remember The Name: Tech Fleece" }, { v: "w07", cap: "NIKEiD Air Max Mirror" } ] },
         { brand: "American Apparel", yrs: "6 years", title: "The AART Gallery", line: "Stealing the apparel industry’s biggest trade show.", text: "Since American Apparel’s fall from grace and purchase by Gildan, I’ve been working with them to rebuild the brand, starting within the printwear industry, where it began and where its volume has always come from. I helped develop its positioning within that industry and wrote the campaign line, Craft the Culture. I also came up with the disruptive installation at the ISS trade show in Long Beach, which put a single T-shirt on display like a work of art in a museum, to remind the industry that American Apparel still makes the original fashion tee: the 2001 and only.",
           media: [ { v: "w04", cap: "The AART Gallery", link: "#american-apparel", full: true }, { img: "assets/aa-black-2001.jpg", cap: "The Black 2001 Exhibit" }, { img: "assets/aa-rack.jpg", cap: "The range, shown as artefacts" } ] },
         { brand: "New Era", yrs: "2 years", title: "Speak With Your Cap", text: "I conceived, wrote and creative-directed the work.", miss: "One line on the idea",
@@ -767,7 +767,7 @@ body[data-view=book]{background:#07080a}body[data-view=book]::after{content:'';p
       ch.media.forEach(function(m){
         h += '<figure' + (m.full ? ' class="full"' : '') + '>';
         if (m.vimeo) h += '<div class="vimeo"><iframe src="https://player.vimeo.com/video/' + m.vimeo + '?title=0&byline=0&portrait=0&dnt=1" title="' + esc(ch.brand + ', ' + m.cap) + '" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>';
-        else if (m.v) h += '<video controls playsinline preload="none" poster="assets/work/' + m.v + '.jpg" src="assets/work/' + m.v + '.mp4" aria-label="' + esc(ch.brand + ', ' + m.cap) + '"></video>';
+        else if (m.v) h += '<video controls playsinline preload="none" poster="' + (m.poster || ('assets/work/' + m.v + '.jpg')) + '" src="assets/work/' + m.v + '.mp4" aria-label="' + esc(ch.brand + ', ' + m.cap) + '"></video>';
         else h += '<img src="' + m.img + '" alt="' + esc(m.cap) + '">';
         h += '<figcaption>' + (m.link ? '<a href="' + m.link + '">' + esc(m.cap) + '</a>' : esc(m.cap)) + '</figcaption></figure>';
       });
