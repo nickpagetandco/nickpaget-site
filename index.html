@@ -323,7 +323,7 @@ body[data-view="book"] .book{display:block}
 body[data-view="case"] .home{display:none}
 body[data-view="case"] .case{display:block}
 .case-top{background:var(--navy);color:var(--ivory)}
-.case-top .wrap{padding-block:calc(var(--m) + var(--header)) var(--s)}
+.case-top .wrap{padding-block:calc(var(--m) + var(--header)) var(--s)}section.case-top.hero-bg{background:#07080a}section.case-top.hero-bg::before{background:var(--tex) center/cover no-repeat;filter:blur(40px) saturate(1.5) brightness(.6);transform:scale(1.3);opacity:.75;-webkit-mask-image:none;mask-image:none}.vfilms .wrap{padding-bottom:var(--l)}.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:32px 24px;margin-top:16px}.vgrid figure{margin:0;display:flex;flex-direction:column;gap:10px}.vgrid .vimeo{position:relative;aspect-ratio:16/9;background:#000}.vgrid .vimeo iframe{position:absolute;inset:0;width:100%;height:100%;border:0}@media (max-width:700px){.vgrid{grid-template-columns:1fr}}
 .case-top h1{font-size:clamp(44px,6vw,88px);line-height:1.02;margin-top:12px}
 .case-lead img,.case-lead .placeholder{width:100%;aspect-ratio:21/9;object-fit:cover;object-position:50% 100%}
 @media (max-width: 767px){ .case-lead img{aspect-ratio:4/3;object-position:40% 100%} }
@@ -717,13 +717,13 @@ body[data-view=book]{background:#07080a}body[data-view=book]::after{content:'';p
       role: "Creative director for the project, overseeing all four markets to strike the right balance between consistency and relevance.",
       roleMissing: "",
       result: "After the campaign, Google Assistant unseated Alexa as the number one voice assistant in Europe, and Campaign named it Integrated Campaign of the Year.",
-      stills: [
-        { kind: "wide", src: "assets/google/g30.jpg", alt: "Four posters: Make Google do it, Dites à Google de le faire, Mach mal Google, Fallo fare a Google.", cap: "One line, four markets." },
-        { kind: "half", src: "assets/google/g63.jpg", alt: "Billboard at Old Street roundabout: Need to find the nearest pub with TV screens?", cap: "Contextual out of home at Old Street, London." },
-        { kind: "half", src: "assets/google/g66.jpg", alt: "Escalator posters reading Make Google suggest it and Ok Google, what should I wear to Pride?", cap: "Pride, on the Underground." },
-        { kind: "half", src: "assets/google/g81.jpg", alt: "Time Out London cover: Ok Google, what’s the London Pride parade route?", cap: "Time Out London." },
-        { kind: "half", src: "assets/google/g39.jpg", alt: "A man in a gallery beside a blue sculpture, thinking: I should remember to pick up toothpaste.", cap: "The films: small moments, local humour." }
+      vimeoFilms: [
+        { id: "274116090", cap: "Make Google do it. U.K., 60 s" },
+        { id: "274116258", cap: "Dites à Google de le faire. France, 60 s" },
+        { id: "274116276", cap: "Fallo fare a Google: Home. Italy, 30 s" },
+        { id: "274116314", cap: "Fallo fare a Google: Car. Italy, 30 s" }
       ],
+      stills: [],
       next: { href: "#mammut", label: "Mammut: Unwellness Retreats" }
     },
     "new-era": {
@@ -742,7 +742,8 @@ body[data-view=book]{background:#07080a}body[data-view=book]::after{content:'';p
 
   function renderCase(c){
     var h = '';
-    h += '<section class="case-top on-navy tex" style="--tex:url(assets/tex/' + ['night','gold','violet'][Math.max(0,Object.values(CASES).indexOf(c)) % 3] + '.jpg)"><div class="wrap"><p class="label">' + esc(c.client) + '</p><h1>' + esc(c.name) + '</h1></div></section>';
+    var heroBg = (c.video && c.video.poster) || (c.lead && c.lead.src) || 'assets/tex/night.jpg';
+    h += '<section class="case-top on-navy tex hero-bg" style="--tex:url(' + heroBg + ')"><div class="wrap"><p class="label">' + esc(c.client) + '</p><h1>' + esc(c.name) + '</h1></div></section>';
     if (c.video) h += '<div class="case-video"><video controls playsinline preload="metadata" poster="' + c.video.poster + '" src="' + c.video.src + '" aria-label="' + esc(c.video.label) + '"></video></div>';
     else h += '<div class="case-lead">' + (c.lead
       ? '<img src="' + c.lead.src + '" alt="' + esc(c.lead.alt) + '"' + (c.lead.style ? ' style="' + c.lead.style + '"' : '') + '>' + (c.lead.cap ? '<p class="lead-cap">' + esc(c.lead.cap) + '</p>' : '')
@@ -779,6 +780,9 @@ body[data-view=book]{background:#07080a}body[data-view=book]::after{content:'';p
       h += '</div></div></section>'; }
     if (c.films) { h += '<section class="films" aria-label="Films"><div class="wrap"><p class="label">Films</p><div class="film-grid">';
       c.films.forEach(function(f){ h += '<figure><a class="film" href="https://www.youtube.com/watch?v=' + f.id + '" target="_blank" rel="noopener" aria-label="Watch on YouTube: ' + esc(f.cap) + '"><img src="' + f.poster + '" alt=""><span class="play" aria-hidden="true"></span></a><figcaption>' + esc(f.cap) + ' <span class="ext">· YouTube ↗</span></figcaption></figure>'; });
+      h += '</div></div></section>'; }
+    if (c.vimeoFilms) { h += '<section class="films vfilms" aria-label="The films"><div class="wrap"><p class="label">The films</p><div class="vgrid">';
+      c.vimeoFilms.forEach(function(f){ h += '<figure><div class="vimeo"><iframe src="https://player.vimeo.com/video/' + f.id + '?title=0&byline=0&portrait=0&dnt=1" title="' + esc(f.cap) + '" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><figcaption>' + esc(f.cap) + '</figcaption></figure>'; });
       h += '</div></div></section>'; }
     if (c.stills.length) { h += '<section class="stills" aria-label="Selected stills"><div class="wrap">';
     c.stills.forEach(function(s){
