@@ -870,6 +870,7 @@ body[data-view=book]{background:#07080a}body[data-view=book]::after{content:'';p
     document.querySelectorAll('video').forEach(function(v){ if (v !== t && !v.closest('.hero') && !v.classList.contains('bgv')) v.pause(); });
   }, true);
   window.addEventListener('hashchange', route);
+  (function(){ var p = location.pathname.replace(/^\/+|\/+$/g,''); if (p && !location.hash && (CASES[p] || p === 'book')) history.replaceState(null, '', '/#' + p); })();
   route();
 
 
